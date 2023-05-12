@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- <h1 class="bg-primary">Saba</h1> -->
+    <header class="bg-primary text-white p-4 mb-4">
+        <div class="row">
+            <div class="col-sm-9 ">
+                <h1>Movie Gallary</h1>
+            </div>
+            <div class="col-sm-3 text-right">
+                <button class="btn btn-warning" id="showModal"> Add Movie</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row" id="moiveContainer">
+           
+
+        </div>
+    </div>
+
+
+
+
+    <div class="backDrop" id="backDrop">
+
+
+    </div>
+    <div class="myModal" id="myModal">
+        <h2 class="myModelHeading mb-4">
+            Add Moive Info
+            <a href="javascript:;" class="myClose">
+                <i class="fa-solid fa-xmark "></i>
+
+            </a>
+        </h2>
+
+        <div class="modalContent">
+            <label for="title"> Title</label>
+            <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <lable for="imgUrl">Image Url</lable>
+            <input type="text" name="" id="imgUrl" class="form-control ">
+        </div>
+        <div class="form-group">
+            <lable for="rating">Rating</lable>
+            <input type="text" name="" id="rating" class="form-control">
+        </div>
+        <div class="form-group text-right">
+            <button class="btn btn-primary btn-lg mr-3" id="addMovieBtn">
+                Add Movie
+            </button>
+
+            <button class="btn btn-danger btn-lg myClose">Cancle</button>
+        </div>
+
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
